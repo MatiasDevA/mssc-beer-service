@@ -1,6 +1,7 @@
 package com.example.msscbeerservice.controller;
 
 import com.example.msscbeerservice.model.BeerDTO;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,12 +19,12 @@ public class BeerController {
     }
 
     @PostMapping
-    public  ResponseEntity saveNewBeer (@RequestBody BeerDTO beerDto){
+    public  ResponseEntity saveNewBeer (@Valid @RequestBody BeerDTO beerDto){
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @PutMapping("/{beerId}")
-    public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId , @RequestBody BeerDTO beerDTO){
+    public ResponseEntity updateBeerById(@PathVariable("beerId") UUID beerId ,@Valid  @RequestBody BeerDTO beerDTO){
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 }
