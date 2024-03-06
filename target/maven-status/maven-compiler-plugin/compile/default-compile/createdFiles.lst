@@ -1,0 +1,14 @@
+com\example\msscbeerservice\controller\BeerController.class
+com\example\msscbeerservice\controller\MvcExceptionHandler.class
+com\example\msscbeerservice\model\BeerStyleEnum.class
+com\example\msscbeerservice\MsscBeerServiceApplication.class
+com\example\msscbeerservice\bootstrap\BeerLoader.class
+com\example\msscbeerservice\model\BeerDTO$BeerDTOBuilder.class
+com\example\msscbeerservice\model\BeerPagedList.class
+com\example\msscbeerservice\Mapper\BeerMapper.class
+com\example\msscbeerservice\domain\Beer$BeerBuilder.class
+com\example\msscbeerservice\repositories\BeerRepository.class
+com\example\msscbeerservice\domain\Beer.class
+com\example\msscbeerservice\Mapper\BeerMapperImpl.class
+com\example\msscbeerservice\model\BeerDTO.class
+com\example\msscbeerservice\Mapper\DateMapper.class
